@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import sanityClient from '../sanityClient'; 
+import sanityClient from '../sanityClient';
 
 function Navbar() {
   const [logoUrl, setLogoUrl] = useState(null);
@@ -25,19 +25,19 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-black p-4">
+    <nav className="bg-black p-2 sm:p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-white">
           {logoUrl ? (
-            <img src={logoUrl} alt="Logo" className="h-12 w-auto" />
+            <img src={logoUrl} alt="Logo" className="h-8 sm:h-12 w-auto" />
           ) : (
             'Loading...'
           )}
         </Link>
 
-        {/* Group "Listen" and "Merch" on the left */}
-        <div className="flex space-x-4 ml-8">
+        {/* Links: Listen, Merch, Bionetta */}
+        <div className="flex space-x-2 sm:space-x-4 ml-4">
           {/* Listen Dropdown */}
           <div className="relative">
             <button
@@ -64,7 +64,7 @@ function Navbar() {
                       href="https://soundcloud.com/xyammangel"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block  py-2 text-white hover:bg-white hover:text-black"
+                      className="block py-2 text-white hover:bg-white hover:text-black"
                     >
                       SoundCloud
                     </a>
@@ -84,7 +84,7 @@ function Navbar() {
                       href="https://www.youtube.com/@XyammAngel__"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block  py-2 text-white hover:bg-white hover:text-black"
+                      className="block py-2 text-white hover:bg-white hover:text-black"
                     >
                       YouTube
                     </a>
@@ -101,8 +101,6 @@ function Navbar() {
           <Link to="/bionetta" className="text-white">
             Bionetta
           </Link>
-
-          
         </div>
       </div>
     </nav>
