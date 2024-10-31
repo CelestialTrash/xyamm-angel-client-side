@@ -1,6 +1,6 @@
-/* 
+/*
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://y75hs7vq.apicdn.sanity.io; img-src 'self' https://y75hs7vq.apicdn.sanity.io; media-src 'self' https://y75hs7vq.apicdn.sanity.io; script-src 'self'; style-src 'self';
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self';
