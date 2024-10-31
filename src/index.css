@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+@font-face {
+  font-family: 'square_sans_serif';
+  src: url('./assets/fonts/square_sans_serif.ttf'); /* Asegúrate de usar la extensión correcta */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    font-family:"square_sans_serif";
+}

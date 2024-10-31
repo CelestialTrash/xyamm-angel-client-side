@@ -1,0 +1,103 @@
+%!Adobe-FontList 1.22
+%Locale:0xc0a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FT88-Regular
+FamilyName:FT88
+StyleName:Regular
+FullName:FT88 Regular
+MenuName:FT88
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rubén\Desktop\WORK\DIRECCION CREATIVA\XYAM ANGEL\presskit\PDF_PACK_EDITABLE\Carpeta presskit\Document fonts\FT88-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:47148
+FileModTime:1646692604
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,FT88 Regular
+NameArray:0,Win,1,FT88
+NameArray:0,Win,16,FT88
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FrutigerLTStd-UltraBlack
+FamilyName:Frutiger LT Std
+StyleName:95 Ultra Black
+FullName:FrutigerLTStd-UltraBlack
+MenuName:Frutiger LT Std 95 UltraBlack
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rubén\Desktop\WORK\DIRECCION CREATIVA\XYAM ANGEL\presskit\PDF_PACK_EDITABLE\Carpeta presskit\Document fonts\FrutigerLTStd-UltraBlack.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:27192
+FileModTime:1550253158
+WeightClass:950
+WidthClass:5
+AngleClass:0
+DesignSize:120
+NameArray:0,Mac,18,Frutiger LT Std 95 UltraBlack
+NameArray:0,Mac,4,FrutigerLTStd-UltraBlack
+NameArray:0,Win,1,Frutiger LT Std 95 UltraBlack
+NameArray:0,Win,16,Frutiger LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rubén\Desktop\WORK\DIRECCION CREATIVA\XYAM ANGEL\presskit\PDF_PACK_EDITABLE\Carpeta presskit\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1639515441
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SquareSansSerif7
+FamilyName:Square Sans Serif 7
+StyleName:Regular
+FullName:Square Sans Serif 7
+MenuName:Square Sans Serif 7
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Rubén\Desktop\WORK\DIRECCION CREATIVA\XYAM ANGEL\presskit\PDF_PACK_EDITABLE\Carpeta presskit\Document fonts\square_sans_serif.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:19680
+FileModTime:1416529682
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Square Sans Serif 7
+NameArray:0,Mac,4,Square Sans Serif 7
+NameArray:0,Win,1,Square Sans Serif 7
+%EndFont
+
