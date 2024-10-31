@@ -6,7 +6,7 @@ import Bionetta from './pages/Bionetta';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import pointerImage from './assets/llave.svg'; // Pointer image
-import backgroundMusic from './assets/esquirlas.mp3'; // Background music file
+
 
 function App() {
   // State to store the mouse position
@@ -51,10 +51,6 @@ function App() {
       }}
     />
 
-    {/* Background Music */}
-    {/* <audio src={backgroundMusic} autoPlay loop volume="0.1" /> */}
-
-    {/* Main content grows to push the footer to the bottom if necessary */}
     <main className="flex-grow">
       <Routes>
         <Route path="/" element={<HomePage />} />
