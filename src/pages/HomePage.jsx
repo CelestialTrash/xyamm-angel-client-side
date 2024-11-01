@@ -4,10 +4,11 @@ import sanityClient from '../sanityClient';
 
 const HomePage = () => {
   const [homePageData, setHomePageData] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(null); // Controla la imagen seleccionada
+  const [selectedImage, setSelectedImage] = useState(null); // Controla la imagen seleccionada en la galería
   const [isLightboxOpen, setIsLightboxOpen] = useState(false); // Controla el estado del lightbox
 
   useEffect(() => {
+    // Fetch data from Sanity for homepage content
     sanityClient
       .fetch(
         `*[_type == "homePage"]{
@@ -37,13 +38,13 @@ const HomePage = () => {
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section with Video */}
-      <section className="hero-section relative h-screen">
+      <section className="hero-section relative h-screen mb-0">
         {homePageData?.heroVideo?.asset?.url ? (
           <video
             autoPlay
             muted
             loop
-            playsInline
+            playsInline // Prevents fullscreen on mobile devices
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             src={homePageData.heroVideo.asset.url}
           />
@@ -55,7 +56,7 @@ const HomePage = () => {
       </section>
 
       {/* Release Section */}
-      <section className="release-section py-12 bg-black">
+      <section className="release-section py-12 bg-black mt-0">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6 text-center text-white">Releases</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
