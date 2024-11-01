@@ -43,7 +43,7 @@ const HomePage = () => {
             autoPlay
             muted
             loop
-            playsInline // Evita el modo de pantalla completa en móviles
+            playsInline
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             src={homePageData.heroVideo.asset.url}
           />
