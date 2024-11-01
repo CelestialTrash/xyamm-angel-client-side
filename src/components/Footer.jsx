@@ -1,3 +1,4 @@
+// src/components/Footer.js
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../sanityClient';
 
@@ -29,9 +30,9 @@ function Footer() {
   }, []);
 
   return (
-    <footer className="bg-black text-white p-2 sm:p-4">
+    <footer id="footer" className="bg-black text-white p-2 sm:p-4 overflow-x-hidden">
       <div className="container mx-auto text-center">
-        <div className="flex justify-center space-x-2 sm:space-x-4 mb-4">
+        <div className="flex justify-center space-x-4 sm:space-x-6 mb-4">
           {socialLinks?.map((link, index) => (
             <a
               key={index}
@@ -42,7 +43,7 @@ function Footer() {
               <img
                 src={link.logoImage?.asset?.url}
                 alt={link.altText || link.platform}
-                className="h-6 w-6 sm:h-8 sm:w-8"
+                className="h-10 w-10 sm:h-12 sm:w-12"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             </a>
