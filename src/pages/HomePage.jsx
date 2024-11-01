@@ -43,7 +43,8 @@ const HomePage = () => {
             autoPlay
             muted
             loop
-            className="absolute inset-0 w-full h-full object-cover"
+            playsInline // Evita el modo de pantalla completa en móviles
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             src={homePageData.heroVideo.asset.url}
           />
         ) : (
@@ -79,30 +80,26 @@ const HomePage = () => {
       </section>
 
       {/* Bio Section with Background Image */}
-      
-
-{/* Bio Section with Background Image */}
-<section
-  className="bio-section relative py-12 bg-center min-h-screen bg-black hidden md:block"
-  style={{
-    backgroundImage: homePageData?.bioBackgroundImage?.asset?.url
-      ? `url(${homePageData.bioBackgroundImage.asset.url})`
-      : 'none',
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
-  }}
->
-  {homePageData?.bioBackgroundImage?.asset?.url ? (
-    <div className="container mx-auto px-4 flex justify-center items-center h-full">
-      <p className="text-2xl text-white font-bold"></p>
-    </div>
-  ) : (
-    <div className="container mx-auto px-4 flex justify-center items-center h-full bg-white">
-      <p className="text-2xl text-black">No Bio Image Available</p>
-    </div>
-  )}
-</section>
-
+      <section
+        className="bio-section relative py-12 bg-center min-h-screen bg-black hidden md:block"
+        style={{
+          backgroundImage: homePageData?.bioBackgroundImage?.asset?.url
+            ? `url(${homePageData.bioBackgroundImage.asset.url})`
+            : 'none',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {homePageData?.bioBackgroundImage?.asset?.url ? (
+          <div className="container mx-auto px-4 flex justify-center items-center h-full">
+            <p className="text-2xl text-white font-bold"></p>
+          </div>
+        ) : (
+          <div className="container mx-auto px-4 flex justify-center items-center h-full bg-white">
+            <p className="text-2xl text-black">No Bio Image Available</p>
+          </div>
+        )}
+      </section>
 
       {/* Gallery Section */}
       <section className="gallery-section py-12 bg-black">
